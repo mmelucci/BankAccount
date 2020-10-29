@@ -43,4 +43,8 @@ public class BankAccount {
       return false;
     }
   }
+
+  public String toString(){
+    return this.accountID + "\t" + this.balance;
+  }
 }

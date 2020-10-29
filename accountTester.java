@@ -20,6 +20,7 @@ public class accountTester {
     if (myaccount.withdraw(100.0) == false) {
       System.out.println("Withdrawal Failed:");
       System.out.println(myaccount.getBalance());
+    }
+    System.out.println(myaccount.toString());
   }
-}
 }
