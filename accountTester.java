@@ -8,9 +8,18 @@ public class accountTester {
     myaccount.deposit(500.0);
     System.out.println(myaccount.getBalance());
     if (myaccount.deposit(-5.0) == false) {
-      System.out.println("Deposit Failed");
+      System.out.println("Deposit Failed:");
       System.out.println(myaccount.getBalance());
-
     }
+    myaccount.withdraw(450.0);
+    System.out.println(myaccount.getBalance());
+    if (myaccount.withdraw(-5.0) == false) {
+      System.out.println("Withdrawal Failed:");
+      System.out.println(myaccount.getBalance());
+    }
+    if (myaccount.withdraw(100.0) == false) {
+      System.out.println("Withdrawal Failed:");
+      System.out.println(myaccount.getBalance());
   }
+}
 }
